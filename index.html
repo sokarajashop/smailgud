@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xquisite</title>
+  <style>
+    /* Reset CSS */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    .header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #520f0f;
+    }
+    
+    .header-content {
+      display: flex;
+      align-items: center;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .xquisite-logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #77009b;
+      margin: 0;
+    }
+    
+    .header-menu {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+    }
+    
+    .header-menu a {
+      text-decoration: none;
+      color: #77009b;
+      margin-left: 20px;
+      font-size: 1.2em;
+    }
+    
+    .header-menu a:first-child {
+      margin-left: auto;
+    }
+    
+    .content {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .content p {
+      font-size: 1.2em;
+      line-height: 1.5;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    
+    .learn-button {
+      background-color: #77009b;
+      color: #ffffff;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .learn-button:hover {
+      background-color: #520f0f;
+    }
+    
+    .footer {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      color: #000000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .footer p {
+      margin-bottom: 10px;
+    }
+    
+    .footer-icons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .footer-icons a {
+      text-decoration: none;
+      color: #77009b;
+      margin: 0 10px;
+      font-size: 0.8em; /* Ukuran font kecil untuk ikon */
+      display: block; /* Membuat ikon menjadi blok untuk mengatur ukuran */
+    }
+
+    .footer-icons img {
+      width: 30px; /* Ukuran gambar logo di footer */
+    }
+    
+    .footer-copyright {
+      margin-top: 20px;
+      font-size: 0.8em;
+      color: #000000;
+    }
+
+    /* Media Query untuk layar dengan lebar maksimum 600px */
+    @media (max-width: 600px) {
+      .header-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .header-menu {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      
+      .header-menu a {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <h1 class="xquisite-logo">Xquisite</h1>
+      <div class="header-menu">
+        <a href="index.html">Home</a>
+        <a href="service.html">Service</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="content">
+    <p>Xquisite</p>
+    <p>Full technical support, Community builder, Translations and Services boosting the potential of Project and Community.</p>
+    <button class="learn-button">Learn with us</button>
+  </section>
+
+  <footer class="footer">
+    <p>Contact us:</p>
+    <div class="footer-icons">
+      <a href="https://twitter.com/xrecodz" target="_blank"><img src="/images/twitter.png" alt="Twitter"></a>
+      <a href="https://discord.gg/xrecodz" target="_blank"><img src="/images/discord.png" alt="Discord"></a>
+      <a href="mailto:xrecodzteam@gmail.com"><img src="/images/email.png" alt="Email"></a>
+    </div>
+    <p class="footer-copyright">© 2024 All Rights Reserved By Xquisite</p>
+  </footer>
+</body>
+</html>
